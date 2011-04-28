@@ -1,3 +1,19 @@
-Tube Plot
+Tube-Plot
+A Vacuum tube plate characteristics graph ploter 
+for the Falstad.com Java circuit simulator.
+This program was written so I could create new tube types for the Falsdad.com java circuit simulator. 
+Author: Evan Salazar esalazar1981@gmail.com  
+Copyright: Creative Commons CC BY-SA 2011
 
-Evan Salazar
+
+Requirements:
+Python 2.6 and Matplotlib
+On Ubuntu install with “sudo apt-get install python-matplotlib”
+
+Usage:
+When running the Falstad.com Java circuit simulator “http://www.falstad.com/circuit/” add a triode to your circuit then click file → export. There will be a line similar to:
+“173 288 240 368 240 0 93.0 680.0” The last two numbers represent the 'mu' and the 'kg1' for the simulation equation. Then re-import back into the program.
+
+If you edit the program you will see the initial values for a couple different tubes as well as the grid lines are graph axis. The 'mu' and 'kg1' can be edited during run time via the sliders. Also the graph axis can be modified with the various zoom tools. Grid voltages must be set before running the program.
+
+When the program first runs you will see a list of the grid voltage lines.  These can be changed by modifying 'grid = np.arange(0.0,-5,-.5)' 

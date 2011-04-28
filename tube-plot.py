@@ -54,8 +54,8 @@ axcolor = 'lightgoldenrodyellow'
 axmu = axes([0.25, 0.1, 0.65, 0.03], axisbg=axcolor)
 axkg1  = axes([0.25, 0.15, 0.65, 0.03], axisbg=axcolor)
 
-skg1 = Slider(axkg1, 'Vkg1', 1., 1500, valinit=kg10)
-smu = Slider(axmu, 'Mu', .1, 200.0, valinit=mu0)
+skg1 = Slider(axkg1, 'kg1', 1., 1500, valinit=kg10)
+smu = Slider(axmu, 'mu', .1, 200.0, valinit=mu0)
 
 def update(val):
     i=0
